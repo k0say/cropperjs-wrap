@@ -1,0 +1,19 @@
+<!-- <div [style.height.px]="height" [style.width.px]="width" style="display: flex"> -->
+<div>
+  <div>
+    <img #cropper [src]="imageSource | safe: 'url'" crossorigin="anonymous" />
+  </div>
+  <div>
+    <img [src]="imageDestination" />
+    {{ data | json }}
+  </div>
+  <canvas id= "canvas"></canvas>
+  <!-- <input
+    type="file"
+    class="sr-only"
+    id="inputImage"
+    name="file"
+    accept="image/*"
+    (change)="fileChangeEvent($event)"
+  />
+</div> -->
