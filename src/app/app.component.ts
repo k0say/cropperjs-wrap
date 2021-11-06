@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
 import { CropperComponent } from './cropper/cropper.component';
 
 @Component({
@@ -11,14 +11,15 @@ export class AppComponent {
   @ViewChild("cropper", {static: false}) imageElement: CropperComponent;
 
   image = undefined;
-  // image = './assets/picture.jpg';
+
 
   open(event) {
     this.imageElement.fileChangeEvent(event)
   }
 
-  clear() {
-    this.imageElement.clear();
+  clear(event) {
+    console.log(event)
+
   }
 
 }
