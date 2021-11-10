@@ -14,12 +14,14 @@ export class CropperComponent implements OnInit, AfterViewInit, OnChanges {
 
   @ViewChild("cropper", { static: false }) imageElement: ElementRef;
 
-  @Input("src") imageSource: HTMLImageElement;
+  @Input() imageSource: HTMLImageElement;
   // @Input("src") imageSource: string | SafeUrl;
   @Input("width") width;
   @Input("height") height;
 
   @Input() cropperOptions: Object;
+
+  @Output() imageSourceChange: EventEmitter<any> = new EventEmitter();
 
   imageDestination: string;
 
