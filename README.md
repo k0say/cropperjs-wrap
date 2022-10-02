@@ -1,3 +1,6 @@
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
+
 # Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
