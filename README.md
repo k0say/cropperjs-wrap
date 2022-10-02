@@ -1,4 +1,4 @@
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/k0say/cropperjs-wrap/actions/workflows/main.yml/badge.svg?branch=main)
 
 
 # Test
