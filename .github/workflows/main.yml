@@ -59,7 +59,7 @@ jobs:
         run: npm run build
 
       - name: Check
-        run: sh 'ls'
+        run: ls
 
 
   deploy:
