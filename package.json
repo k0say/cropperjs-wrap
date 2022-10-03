@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "build:prod": "ng build --configuration production --base-href https://k0say.github.io/cropperjs-wrap/",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
