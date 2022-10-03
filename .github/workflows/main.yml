@@ -58,6 +58,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Check
+        run: sh 'ls'
+
+
   deploy:
     runs-on: ubuntu-latest
     
